@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Shrimpu App",
+    "slug": "shrimpapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/shrimpuicon.png",
+    // "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.tiwaporn.shrimpapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e05824d7-1bd6-4bd7-8560-05f4d957a25c"
+      }
+    }
+  }
+}
