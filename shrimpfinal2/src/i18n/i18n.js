@@ -1,8 +1,8 @@
 export const DICT = {
   th: {
     common: {
-      home: 'หน้าแรก', scan: 'สแกน', settings: 'ตั้งค่า', catalog: 'แคตตาล็อกกุ้ง',
-      recipe: 'เมนู', language: 'ภาษา', darkMode: 'โหมดมืด', about: 'เกี่ยวกับเรา',
+      home: 'หน้าแรก', scan: 'สแกน', settings: 'การตั้งค่า', catalog: 'แคตตาล็อกกุ้ง',
+      recipe: 'รายการอาหาร', language: 'ภาษา', darkMode: 'โหมดมืด', about: 'เกี่ยวกับเรา',
       help: 'ช่วยเหลือ', ingredient: 'หน้าส่วนผสม', details: 'รายละเอียด'
     },
     home: {
@@ -21,8 +21,8 @@ export const DICT = {
   en: {
     common: {
       home: 'Home', scan: 'Scan', settings: 'Settings', catalog: 'Shrimp Catalog',
-      recipe: 'Recipe', language: 'Language', darkMode: 'Dark Mode', about: 'About Us',
-      help: 'Help', ingredient: 'Ingredient', details: 'Details'
+      recipe: 'Recipes', language: 'Language', darkMode: 'Dark Mode', about: 'About Us',
+      help: 'Help', ingredient: 'Ingredients', details: 'Details'
     },
     home: {
       crispyTop: 'Crispy', crispyBottom: 'Fried Shrimp',
@@ -32,8 +32,8 @@ export const DICT = {
     catalog: {
       title: 'Shrimp Catalog',
       back: 'Back',
-      white: 'White Shrimp',
-      tiger: 'Tiger Shrimp',
+      white: 'Whiteleg Shrimp',
+      tiger: 'Black Tiger Shrimp',
       banana: 'Banana Shrimp'
     }
   }

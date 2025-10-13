@@ -30,7 +30,8 @@ let customFonts = {
 export default function IngredientScreen({ route }) {
   const scrollRef = useRef(null);
   const { id = 'crispy' } = route.params || {};
-  const { colors } = useThemeX();
+  // const { colors } = useThemeX();
+  const { isDark, colors } = useThemeX();
   const { lang } = useLang();
   const r = RECIPES[id];
   const t = r[lang] || r.th;
@@ -49,7 +50,11 @@ export default function IngredientScreen({ route }) {
   };
 
   return (
-    <LinearGradient colors={['#fff7f1', '#fff']} style={{ flex: 1 }}>
+    // <LinearGradient colors={['#fff7f1', '#fff']} style={{ flex: 1 }}>
+    <LinearGradient
+      colors={isDark ? [colors.bg, colors.bg] : ['#fff7f1', '#fff']}
+      style={{ flex: 1 }}
+    >
       <ScrollView ref={scrollRef} contentContainerStyle={{ paddingBottom: 120 }}>
         {/* Header Image */}
         <View style={styles.cardContainer}>

@@ -1,5 +1,3 @@
-// ✅ File 2: src/screens/CatalogScreen.js
-
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet, FlatList } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -15,7 +13,7 @@ export default function CatalogScreen() {
   const shrimps = [
     { id: 'white_shrimp', name: t('Whiteleg shrimp '), img: require('../../assets/images/shrimp-icon.png') },
     { id: 'banana_shrimp', name: t('Banana Shrimp'), img: require('../../assets/images/shrimp-icon.png') },
-    { id: 'tiger_shrimp', name: t('Tiger Shrimps'), img: require('../../assets/images/shrimp-icon.png') },
+    { id: 'tiger_shrimp', name: t('Black Tiger Shrimp'), img: require('../../assets/images/shrimp-icon.png') },
   ];
 
   const cardColors = ['#FEF7DF', '#FEEBDA', '#E6F5FF']; // สีเหลืองอ่อน ส้มอ่อน ฟ้าอ่อน

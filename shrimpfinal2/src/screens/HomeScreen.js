@@ -30,7 +30,7 @@ export default function HomeScreen({ navigation }) {
       {/* Crispy Fried Shrimp (ชิดขวา) */}
       <TouchableOpacity
         key="crispy"
-        style={styles.recipeContainerRight} // <-- ใช้สไตล์สำหรับชิดขวา
+        style={styles.recipeContainerRight} 
         activeOpacity={0.8}
         onPress={() => navigation.navigate('Ingredient', { id: 'crispy' })}
       >
@@ -40,17 +40,17 @@ export default function HomeScreen({ navigation }) {
       {/* Raw Shrimp in Fish Sauce (ชิดซ้าย) */}
       <TouchableOpacity
         key="raw"
-        style={styles.recipeContainerLeft} // <-- ใช้สไตล์สำหรับชิดซ้าย
+        style={styles.recipeContainerLeft} 
         activeOpacity={0.8}
         onPress={() => navigation.navigate('Ingredient', { id: 'raw' })}
       >
         <Image source={require('../../assets/images/raw_shrimp_no_bg.png')} style={styles.recipeImage} />
       </TouchableOpacity>
 
-      {/* Ha Gow (Crystal Shrimp Dumpling) (ชิดซ้ายเป็นค่าเริ่มต้น) */}
+      {/* Ha Gow (Crystal Shrimp Dumpling) (ชิดซ้าย) */}
       <TouchableOpacity
         key="hagow"
-        style={styles.recipeContainerRight} // <-- ใช้สไตล์สำหรับชิดซ้าย
+        style={styles.recipeContainerRight} 
         activeOpacity={0.8}
         onPress={() => navigation.navigate('Ingredient', { id: 'hagow' })}
       >
@@ -74,20 +74,20 @@ const styles = StyleSheet.create({
   },
   sectionHead: { fontSize: 40, fontWeight: '800', marginVertical: 30 },
   
-  // --- สไตล์ที่ปรับแก้ใหม่ ---
+  
   // Container สำหรับรูปที่ชิดซ้าย
   recipeContainerLeft: {
-    alignItems: 'flex-start', // จัดให้ item ข้างใน (Image) ไปอยู่ด้านซ้ายสุด
+    alignItems: 'flex-start', 
     marginVertical: 12,
   },
   // Container สำหรับรูปที่ชิดขวา
   recipeContainerRight: {
-    alignItems: 'flex-end', // จัดให้ item ข้างใน (Image) ไปอยู่ด้านขวาสุด
+    alignItems: 'flex-end', 
     marginVertical: 12,
   },
   recipeImage: {
-    width: '90%', // ลดความกว้างลงเล็กน้อยเพื่อให้เห็นการจัดชิดซ้าย-ขวา
-    height: 300,  // เพิ่มความสูงเพื่อให้ดูเด่นขึ้น
+    width: '90%', 
+    height: 300,  
     resizeMode: 'contain',
   },
 });

@@ -25,7 +25,7 @@ export default function WhiteShrimpScreen() {
         <Text style={[styles.title, { color: colors.text }]}>{t(shrimp.nameKey)}</Text>
         <Text style={[styles.description, { color: colors.text }]}>{shrimp.description[lang]}</Text>
 
-        {/* <Text style={styles.sourceText}>source: {shrimp.source}</Text> */}
+        <Text style={styles.sourceText}>source: TrueID Food{shrimp.source}</Text>
 
         <Text style={[styles.sectionTitle, { color: colors.text }]}>Nutrition Facts</Text>
         <View style={[styles.card, { borderColor: colors.border }]}>
@@ -39,7 +39,7 @@ export default function WhiteShrimpScreen() {
 
          {/* Prices */}
         <Text style={[styles.sectionTitle, { color: colors.text, marginTop: 24 }]}>
-          {lang === 'th' ? 'ราคาตามร้านค้า' : 'Check Price'}
+          {lang === 'th' ? 'Check Price' : 'Check Price'}
         </Text>
 
          {shrimp.prices.map((p, i) => (
@@ -60,7 +60,7 @@ export default function WhiteShrimpScreen() {
 }
 
 const styles = StyleSheet.create({
-  headerImage: { width: '100%', height: 240, resizeMode: 'cover' },
+  headerImage: { width: '100%', height: 450, resizeMode: 'cover' },
   backButton: { position: 'absolute', top: 40, left: 16, backgroundColor: '#fff8', padding: 6, borderRadius: 20 },
   title: { fontSize: 28, fontWeight: '800', marginTop: 12 },
   description: { fontSize: 16, marginVertical: 12, lineHeight: 24 },
